@@ -91,12 +91,12 @@ A user is unable to log in to their device because their account has been locked
 - Within DC-1 VM, open "Active Directory Users and Computers" application
 - Within "Active Directory Users and Computers" application, right click "mydomain.com" then click "Find"
 - Under "Name", type in the name of the user with the locked account to find them
-<img src="https://i.imgur.com/WIvwCtT.png" alt="find user"/>
+<img src="https://imgur.com/TDHlCGK.png" alt="find user"/>
 
 - Double click the found user to open their properties
 - Navigate to "Account" tab
 - Check box that says "Unlock account. This account is currently locked out on the Active Directory Domain Controller"
-<img src="https://i.imgur.com/Lib2ASJ.png" alt="unlock user account"/>
+<img src="https://imgur.com/8ulhwsL.png" alt="unlock user account"/>
 
 - Click "Apply"
     
@@ -130,10 +130,9 @@ A user has reason to believe their account information has been leaked and there
 - Log in to the DC-1 VM as "Jane Doe" (Domain Admin)
 - Within "Active Directory Users and Computers" application, right click "mydomain.com" then click "Find"
 - Under "Name", type in the name of the user with the locked account to find them
-<img src="https://i.imgur.com/WIvwCtT.png" alt="find user"/>
 
 - Right click the found user and click "Disable Account"
-<img src="https://i.imgur.com/feJNNrv.png" alt="disabling account"/>
+<img src="https://imgur.com/1n3ohuH.png" alt="disabling account"/>
 
 - Now that the account is disabled, we will check the logs for suspicious activity
 - Log in to Client-1 VM as "Jane Doe"
@@ -141,14 +140,14 @@ A user has reason to believe their account information has been leaked and there
 - Navigate to "Windows Logs" -> "Security"
 - Observe the logs and you will see that there have been some "Audit Failures"
 - If you look at the details, you will see that these particular "Audit Failures" are attempted login attempts that failed, which indicates that someone has been continuously trying to access the account
-<img src="https://i.imgur.com/JNe6SJd.png" alt="disabling account"/>
+<img src="https://imgur.com/jrgf73K.png" alt="disabling account"/>
 
 - At this point the domain admin could contact the user to verify if these failed login attempts was them
 - If the user says that they were not the cause of the failed login attempts, then the domain administrator will reset their password to further protect their account.  To do this, go back to the Active Directory where we found the user, right click the user, and select "Reset password" to reset their password
-<img src="https://i.imgur.com/bytZdWr.png" alt="reset password"/>
+<img src="https://imgur.com/dW02KhJ.png" alt="reset password"/>
 
 - Now that the domain administrator has reset their password, they can reactivate their account.  To do this, you will just right click the user and click "Enable Account".  (This is the same way you previously disabled account and reset password)
-<img src="https://i.imgur.com/bytZdWr.png" alt="enable account"/>
+<img src="https://imgur.com/7tEBHNX.png" alt="enable account"/>
     
 </p>
 <br />
@@ -156,7 +155,7 @@ A user has reason to believe their account information has been leaked and there
 <h4> Result: </h4>
 <p>
 
-As the domain administrator, we have successfully reviewed the user's account activity and protected company resources.  The user's account was deactivated, observed for suspicous activity, and re-enabled with new login credentials.  The user is now relieved that their account information is protected again.
+As the domain administrator, we have successfully reviewed the user's account activity and protected company resources.  The user's account was deactivated, observed for suspicous activity, and re-enabled with new login credentials. The user is now relieved that their account information is protected again.
   
 </p>
 <br />
