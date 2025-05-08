@@ -20,9 +20,9 @@ Welcome back again!  This project is all about simulating scenarios that may be 
 <h2>Prerequisites</h2>
 
 -  Please complete the following before beginning this project:
-    - <a href="https://github.com/christianDCdev/active-directory-setup">Active Directory: Setup with Azure Virtual Machines</a>
-    - <a href="https://github.com/christianDCdev/ad-deploy-and-config">Active Directory: Deployment and Configuration</a>
-    - <a href="https://github.com/christianDCdev/ad-user-generation">Active Directory: Generating Users</a>
+    - <a href="https://github.com/cristopherb19/active-directory-setup">Active Directory: Setup with Azure Virtual Machines</a>
+    - <a href="https://github.com/cristopherb19/ad-deploy-and-config">Active Directory: Deployment and Configuration</a>
+    - <a href="https://github.com/cristopherb19/ad-user-generation">Active Directory: Generating Users</a>
 
 <h2>Objectives</h2>
 
