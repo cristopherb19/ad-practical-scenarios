@@ -3,7 +3,7 @@
 </p>
 
 <h1>Active Directory: Practical Scenarios</h1>
-Welcome back again!  This project is all about simulating scenarios that may be encountered when working with Active Directory.  By the end of this project, you should have a better understanding of user provisioning and administration within Active Directory.
+Welcome back again!  This project is all about simulating scenarios that may be encountered when working with Active Directory. By the end of this project, you should have a better understanding of user provisioning and administration within Active Directory.
 <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -79,9 +79,9 @@ As the domain administrator, we have successfully created an Account Lockout Pol
 <h4>Situation:</h4>
 <p>
 
-A user is unable to log in to their device because their account has been locked for security purposes.  The user seeks help from the domain administrator, since they have full control over the domain, which includes the ability to unlock their account. 
+A user is unable to log in to their device because their account has been locked for security purposes. The user seeks help from the domain administrator, since they have full control over the domain, which includes the ability to unlock their account. 
 
-- NOTE: To simulate this we will first have to choose a user from our active directory, then purposely fail to login to Client-1 VM with that selected user's username until the account gets locked. (EXAMPLE: If user's name is "fox.civ", then the username you should use when attempting to login is "mydomain.com\fox.civ")
+- NOTE: To simulate this we will first have to choose a user from our active directory, then purposely fail to login to Client-1 VM with that selected user's username until the account gets locked. (EXAMPLE: If user's name is "boh.moc", then the username you should use when attempting to login is "mydomain.com\boh.moc")
     
 </p>
 <br />
@@ -105,7 +105,7 @@ A user is unable to log in to their device because their account has been locked
 <h4> Result: </h4>
 <p>
 
-As the domain administrator, we assisted the user by unlocking their account.  The user has regained full access and is now able to login successfully.
+As the domain administrator, we assisted the user by unlocking their account. The user has regained full access and is now able to login successfully.
 
 - NOTE: You could test to see if it worked by simply logging in to Client-1 VM with the user's correct login credentials.
     
@@ -118,7 +118,7 @@ As the domain administrator, we assisted the user by unlocking their account.  T
 
 <p>
 
-A user has reason to believe their account information has been leaked and there is a chance an unauthorized user may have gained access to it.  The user reports this to a domain administrator so they can take action in ensuring the security of company resources.  The domain administrator will now want to temporarily deactivate the account and check the logs for any suspicious activity.
+A user has reason to believe their account information has been leaked and there is a chance an unauthorized user may have gained access to it. The user reports this to a domain administrator so they can take action in ensuring the security of company resources. The domain administrator will now want to temporarily deactivate the account and check the logs for any suspicious activity.
     
 </p>
 <br/>
@@ -136,17 +136,17 @@ A user has reason to believe their account information has been leaked and there
 
 - Now that the account is disabled, we will check the logs for suspicious activity
 - Log in to Client-1 VM as "Jane Doe"
-- Within Client-1 VM, type in "eventvwr.msc" in the windows search bar and open the application
+- In Client-1 VM, type in "eventvwr.msc" in the windows search bar and open the application
 - Navigate to "Windows Logs" -> "Security"
 - Observe the logs and you will see that there have been some "Audit Failures"
 - If you look at the details, you will see that these particular "Audit Failures" are attempted login attempts that failed, which indicates that someone has been continuously trying to access the account
 <img src="https://imgur.com/jrgf73K.png" alt="disabling account"/>
 
 - At this point the domain admin could contact the user to verify if these failed login attempts was them
-- If the user says that they were not the cause of the failed login attempts, then the domain administrator will reset their password to further protect their account.  To do this, go back to the Active Directory where we found the user, right click the user, and select "Reset password" to reset their password
+- If the user says that they were not the cause of the failed login attempts, then the domain administrator will reset their password to further protect their account. To do this, go back to the Active Directory where we found the user, right click the user, and select "Reset password" to reset their password
 <img src="https://imgur.com/dW02KhJ.png" alt="reset password"/>
 
-- Now that the domain administrator has reset their password, they can reactivate their account.  To do this, you will just right click the user and click "Enable Account".  (This is the same way you previously disabled account and reset password)
+- Now that the domain administrator has reset their password, they can reactivate their account.  To do this, you will just right click the user and click "Enable Account". (This is the same way you previously disabled account and reset password)
 <img src="https://imgur.com/7tEBHNX.png" alt="enable account"/>
     
 </p>
@@ -155,7 +155,7 @@ A user has reason to believe their account information has been leaked and there
 <h4> Result: </h4>
 <p>
 
-As the domain administrator, we have successfully reviewed the user's account activity and protected company resources.  The user's account was deactivated, observed for suspicous activity, and re-enabled with new login credentials. The user is now relieved that their account information is protected again.
+As the domain administrator, we have successfully reviewed the user's account activity and protected company resources. The user's account was deactivated, observed for suspicous activity, and re-enabled with new login credentials. The user is now relieved that their account information is protected again.
   
 </p>
 <br />
@@ -164,6 +164,6 @@ As the domain administrator, we have successfully reviewed the user's account ac
 
 <p>
 
-Congratulations on completing this series of Active Directory projects!  Active Directory is absolutely crucial for managing network access and security within an organization.  These simulated situations are common challenges an IT professional may encounter in the workplace and it is important to have an idea of how to resolve them.
+Congratulations on completing this series of Active Directory projects! Active Directory is absolutely crucial for managing network access and security within an organization. These simulated situations are common challenges an IT professional may encounter in the workplace and it is important to have a general idea of how to resolve them.
 
 </p>
