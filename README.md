@@ -46,22 +46,23 @@ Many user accounts are being accessed by unauthorized users.  Because of this we
 - Log in to DC-1 VM via Remote Desktop
 - Within DC-1 VM, open "Group Policy Management" application
 - Within "Group Policy Management" application, right click and "Edit" the "Default Domain Policy"
-<img src="https://i.imgur.com/cBHzQqz.png" alt="default domain policy"/>
+<img src="https://imgur.com/DxKXTXg.png" alt="default domain policy"/>
 
 - Expand "Computer Configuration" -> "Policies" -> "Windows Settings" -> "Security Settings" -> "Account Policies" -> "Account Lockout Policy"
 - Open "Account lockout duration" (NOTE: This is how long user accounts will be locked)
 - Check "Define this policy setting" box, designate a time, and then click "Apply"
-<img src="https://i.imgur.com/LJeh5tv.png" alt="account lockout duration"/>
+<img src="https://imgur.com/YOcS27Q.png" alt="account lockout duration"/>
 
 - Click "Account lockout threshold" (NOTE: This is how many login attempts a user can fail before account gets locked)
 - Check "Define this policy setting" box, designate number of invalid login attempts, and then click "Apply"
-<img src="https://i.imgur.com/RH8fpYg.png" alt="account lockout threshold"/>
+<img src="https://imgur.com/tIGCnKf.png" alt="account lockout threshold"/>
 
 - Confirm that "Allow Administrator account lockout" is "Enabled"
 - Click "Reset account lockout counter after" (NOTE: This is how long account is locked for before allowing user to attempt login again)
 - Check "Define this policy setting" box, designate a time, and then click "Apply"
 - Review policies and policy settings
-<img src="https://i.imgur.com/sB0vB1z.png" alt="policies"/>
+<img src="https://imgur.com/ru6lJ7n.png" alt="policies"/>
+<img src="https://imgur.com/L45Hdcl.png" alt="policies"/>
     
 </p>
 <br />
